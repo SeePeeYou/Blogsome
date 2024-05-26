@@ -16,6 +16,7 @@ import lombok.Data;
 @Data
 @Table(name = "blog")
 public class BlogDao {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
@@ -33,6 +34,5 @@ public class BlogDao {
 
   @OneToMany
   private List<CommentDao> comments;
-
 
 }
