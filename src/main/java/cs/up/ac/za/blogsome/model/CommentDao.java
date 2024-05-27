@@ -29,6 +29,6 @@ public class CommentDao {
   @ManyToOne
   private BlogDao blog;
 
-  private Integer likes;
+  private Integer likes = 0;
 
 }

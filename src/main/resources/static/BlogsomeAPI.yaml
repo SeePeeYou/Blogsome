@@ -226,7 +226,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/comments'
+              $ref: '#/components/schemas/reply'
       responses:
         "200":
           description: Successful response
@@ -277,6 +277,9 @@ components:
         likes:
           type: integer
           format: int64
+        post:
+          type: string
+
       description: posted blogs
     comments:
       type: object

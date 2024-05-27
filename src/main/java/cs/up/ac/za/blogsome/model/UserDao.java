@@ -21,7 +21,7 @@ public class UserDao {
 
   private String username;
 
-  private Integer followers;
+  private Integer followers = 0;
 
   @OneToMany(cascade = CascadeType.ALL)
   private List<BlogDao> blogs;
