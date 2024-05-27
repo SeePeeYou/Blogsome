@@ -30,7 +30,7 @@ public class BlogDao {
   @ManyToOne
   private UserDao blogUser;
 
-  private Integer likes;
+  private Integer likes = 0;
 
   @OneToMany
   private List<CommentDao> comments;

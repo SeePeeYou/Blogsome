@@ -24,6 +24,6 @@ public class ReplyDao {
   @ManyToOne
   private CommentDao comment;
 
-  private Integer likes;
+  private Integer likes = 0;
 
 }
